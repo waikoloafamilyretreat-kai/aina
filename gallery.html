@@ -2,29 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photo Gallery</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header class="header">
     <h1>Gallery 📷</h1>
     <p>See the charm of our cozy rental and its surroundings.</p>
   </header>
 
-  <main class="gallery-grid">
-    <img src="images/opt-house01.jpg" alt="Main House View" class="gallery-image" />
-    <img src="images/opt-house02.jpg" alt="Living Room" class="gallery-image" />
-    <img src="images/opt-house03.jpg" alt="Bedroom" class="gallery-image" />
-    <img src="images/opt-house04.jpg" alt="Kitchen" class="gallery-image" />
-    <img src="images/opt-house05.jpg" alt="Patio" class="gallery-image" />
-    <img src="images/opt-house06.jpg" alt="Sunset View" class="gallery-image" />
-    <img src="images/opt-house07.jpg" alt="Backyard" class="gallery-image" />
-    <img src="images/opt-house08.jpg" alt="Dining Area" class="gallery-image" />
-    <img src="images/opt-house09.jpg" alt="Exterior Night" class="gallery-image" />
-  </main>
+  <main class="gallery-page">
+    <section class="gallery-group" aria-labelledby="group-exterior">
+      <div class="group-heading">
+        <h2 id="group-exterior">Exterior</h2>
+        <p>Main outside views of the property.</p>
+      </div>
 
+      <div class="gallery-grid">
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/front_pic.jpg" alt="Front exterior view of the house" />
+          <figcaption class="card-overlay">
+            <h3>Main House View</h3>
+            <p>A welcoming front view of the rental and its surrounding space.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/back_pic.jpg" alt="Exterior of the house at night" />
+          <figcaption class="card-overlay">
+            <h3>Backyard View</h3>
+            <p>A spacious backyard offers a peaceful place to relax.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="gallery-group" aria-labelledby="group-indoor">
+      <div class="group-heading">
+        <h2 id="group-indoor">Indoor Spaces</h2>
+        <p>Comfortable rooms and shared living areas inside the home.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/living_rm01.jpg" alt="Living room seating area" />
+          <figcaption class="card-overlay">
+            <h3>Living Room</h3>
+            <p>A cozy lounge area for relaxing, reading, or gathering together.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/kitchen.jpg" alt="Kitchen with appliances and workspace" />
+          <figcaption class="card-overlay">
+            <h3>Kitchen</h3>
+            <p>A spacious, fully equipped kitchen has everything you need to cook and dine comfortably.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/bedroom01.jpg" alt="Bedroom with king size bed" />
+          <figcaption class="card-overlay">
+            <h3>Master Bedroom</h3>
+            <p>The inviting primary bedroom provides a quiet and cozy escape (King).</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/opt-house05.jpg" alt="Bedroom with queen size bed" />
+          <figcaption class="card-overlay">
+            <h3>2nd Bedroom</h3>
+            <p>The inviting second bedroom offers a cozy retreat for family or friends (Queen).</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/opt-house04.jpg" alt="Bedroom with full size bed and a bunk bed" />
+          <figcaption class="card-overlay">
+            <h3>3rd Bedroom</h3>
+            <p>Perfect for kids or extra guests, this bedroom includes a full-size bed and a bunk bed</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/bedroom02.jpeg" alt="Another king size Bedroom" />
+          <figcaption class="card-overlay">
+            <h3>4th Bedroom</h3>
+            <p>The home also includes another bedroom with a king-size bed.</p>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="gallery-group" aria-labelledby="group-outdoor">
+      <div class="group-heading">
+        <h2 id="group-outdoor">Outdoor &amp; Views</h2>
+        <p>Open-air spots and scenic views around the property.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/opt-house05.jpg" alt="Outdoor patio area" />
+          <figcaption class="card-overlay">
+            <h3>Patio</h3>
+            <p>A peaceful outdoor patio perfect for coffee, meals, or unwinding.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/opt-house06.jpg" alt="Sunset view from the property" />
+          <figcaption class="card-overlay">
+            <h3>Sunset View</h3>
+            <p>A beautiful golden-hour view to enjoy at the end of the day.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-card" tabindex="0">
+          <img src="images/opt-house07.jpg" alt="Backyard area behind the house" />
+          <figcaption class="card-overlay">
+            <h3>Backyard</h3>
+            <p>An open backyard space with room to relax and enjoy the outdoors.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
-
