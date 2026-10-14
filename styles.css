@@ -31,9 +31,53 @@ body {
 }
 
 .header p {
-  margin: 0;
+  max-width: 70ch;
+  margin: 0 auto;
   color: var(--muted);
   font-size: 1rem;
+}
+
+.main-grid {
+  width: min(960px, calc(100% - 40px));
+  margin: 0 auto 60px;
+  display: grid;
+  gap: 32px;
+}
+
+.info-section h2,
+.form-section,
+.group-heading,
+.contact-page {
+  text-align: center;
+}
+
+.info-section p {
+  max-width: 70ch;
+  margin: 0 auto 24px;
+}
+
+.house-image {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius);
+}
+
+.form-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+}
+
+.contact-page {
+  width: min(960px, calc(100% - 40px));
+  margin: 48px auto 60px;
+  overflow-wrap: anywhere;
 }
 
 .gallery-page {
