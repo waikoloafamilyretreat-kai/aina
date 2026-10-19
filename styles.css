@@ -85,6 +85,43 @@ body {
   margin: 0 auto 60px;
 }
 
+.testimonials-page {
+  width: min(800px, calc(100% - 40px));
+  margin: 0 auto 60px;
+}
+
+.testimonials-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 32px;
+}
+
+.testimonial-card {
+  margin: 0 0 24px;
+  padding: clamp(12px, 3vw, 24px);
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.testimonial-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.testimonial-card summary {
+  margin-top: 16px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.testimonial-card blockquote {
+  margin: 16px 0 0;
+}
+
 .gallery-group {
   margin-bottom: 32px;
   padding: 20px;
