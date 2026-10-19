@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome to Our Cozy Rental</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=area-viewer-1" />
+  <script src="gallery.js" defer></script>
 </head>
 <body>
 
@@ -22,6 +23,46 @@
       <img src="images/opt-house01.jpg" alt="Our Rental House" class="house-image" />
     </div>
 
+    <section class="area-section" aria-labelledby="area-heading">
+      <h2 id="area-heading">Explore the Kohala Coast</h2>
+      <p>Find a little island inspiration, from open-air shopping to beautiful beaches.</p>
+      <div class="area-grid">
+        <figure class="area-card gallery-card" tabindex="0">
+          <img src="images/area/queens-marketplace.jpg" alt="Open-air shopping and tropical landscaping at Queens’ Marketplace" loading="lazy" width="750" height="450" />
+          <figcaption class="card-overlay">
+            <h3>Queens’ Marketplace</h3>
+            <p>Browse open-air shops, pick up island treats, and enjoy a relaxed afternoon in tropical surroundings.</p>
+          </figcaption>
+        </figure>
+        <figure class="area-card gallery-card" tabindex="0">
+          <img src="images/area/kings-shops.jpg" alt="Entrance to Kings’ Shops shopping center in Waikoloa" loading="lazy" width="1000" height="600" />
+          <figcaption class="card-overlay">
+            <h3>Kings’ Shops</h3>
+            <p>Discover boutiques, galleries, and places to dine at this open-air Waikoloa shopping center.</p>
+          </figcaption>
+        </figure>
+        <figure class="area-card gallery-card" tabindex="0">
+          <img src="images/area/waikoloa-beach.jpg" alt="Aerial view of Waikoloa Beach at ‘Anaeho‘omalu Bay and its coastal fishponds" loading="lazy" width="1000" height="563" />
+          <figcaption class="card-overlay">
+            <h3>Waikoloa Beach · A-Bay</h3>
+            <p>Take in palm-lined sands, turquoise water, and historic fishponds at ‘Anaeho‘omalu Bay.</p>
+          </figcaption>
+        </figure>
+        <figure class="area-card gallery-card" tabindex="0">
+          <img src="images/area/hapuna-beach.jpg" alt="White sand and ocean along Hāpuna Beach" loading="lazy" width="1000" height="749" />
+          <figcaption class="card-overlay">
+            <h3>Hāpuna Beach</h3>
+            <p>Enjoy sweeping ocean views and a beautiful stretch of white sand along the Kohala Coast.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <details class="area-credits">
+        <summary>Photo credits</summary>
+        <p>Queens’ Marketplace: <a href="https://www.queensmarketplace.com/center-info/">Queens’ Marketplace</a>. Kings’ Shops: <a href="https://kingsshops.com/">Kings’ Shops</a>.</p>
+        <p>Waikoloa Beach: <a href="https://commons.wikimedia.org/wiki/File:Aerial_view_of_Anaeho%27omalu_Bay_Beach.JPG">Kyle Hawton</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Hāpuna Beach: <a href="https://commons.wikimedia.org/wiki/File:Hapuna_Beach_(26503412320).jpg">Laika ac</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>. Beach photos resized and cropped for display; their respective licenses apply.</p>
+      </details>
+    </section>
+
     <div class="form-section">
       <h2>Explore More</h2>
       <ul>
@@ -34,6 +75,21 @@
     </div>
   </main>
 
+  <dialog class="photo-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-description">
+    <div class="viewer-toolbar">
+      <span id="viewer-count" aria-live="polite"></span>
+      <button type="button" class="viewer-close" aria-label="Close photo viewer" autofocus>Close ×</button>
+    </div>
+    <img class="viewer-image" alt="" />
+    <div class="viewer-caption" aria-live="polite">
+      <h2 id="viewer-title"></h2>
+      <p id="viewer-description"></p>
+    </div>
+    <nav class="viewer-navigation" aria-label="Photo navigation">
+      <button type="button" class="viewer-previous">← Previous</button>
+      <button type="button" class="viewer-next">Next →</button>
+    </nav>
+  </dialog>
 </body>
 </html>
 
