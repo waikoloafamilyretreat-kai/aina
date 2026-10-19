@@ -100,6 +100,7 @@ body {
 
 .testimonial-card {
   margin: 0 0 24px;
+  text-align: center;
   padding: clamp(12px, 3vw, 24px);
   background: var(--surface);
   border-radius: var(--radius);
@@ -110,10 +111,16 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  margin-inline: auto;
+}
+
+.testimonial-card details {
+  margin-bottom: 16px;
 }
 
 .testimonial-card summary {
-  margin-top: 16px;
+  display: list-item;
+  list-style-position: inside;
   cursor: pointer;
   color: var(--text);
 }
