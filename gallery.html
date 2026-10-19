@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photo Gallery</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=gallery-viewer-1" />
+  <script src="gallery.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -129,5 +130,20 @@
       </div>
     </section>
   </main>
+  <dialog class="photo-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-description">
+    <div class="viewer-toolbar">
+      <span id="viewer-count" aria-live="polite"></span>
+      <button type="button" class="viewer-close" aria-label="Close photo viewer" autofocus>Close ×</button>
+    </div>
+    <img class="viewer-image" alt="" />
+    <div class="viewer-caption" aria-live="polite">
+      <h2 id="viewer-title"></h2>
+      <p id="viewer-description"></p>
+    </div>
+    <nav class="viewer-navigation" aria-label="Photo navigation">
+      <button type="button" class="viewer-previous">← Previous</button>
+      <button type="button" class="viewer-next">Next →</button>
+    </nav>
+  </dialog>
 </body>
 </html>
