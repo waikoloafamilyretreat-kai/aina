@@ -1,5 +1,14 @@
 {
   "confirmedFrom": "2026-11-01",
   "confirmedThrough": "2027-04-30",
-  "bookings": []
+  "bookings": [
+    { "checkin": "2026-11-10", "checkout": "2026-11-13" },
+    { "checkin": "2026-11-17", "checkout": "2026-11-21" },
+    { "checkin": "2026-11-22", "checkout": "2026-11-26" },
+    { "checkin": "2026-11-27", "checkout": "2026-12-05" },
+    { "checkin": "2026-12-22", "checkout": "2026-12-27" },
+    { "checkin": "2027-01-18", "checkout": "2027-01-25" }
+     
+
+  ]
 }
