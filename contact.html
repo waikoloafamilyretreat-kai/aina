@@ -3,13 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Contact Us | Waikoloa Getaway</title>
+  <link rel="stylesheet" href="styles.css?v=contact-calendar-2" />
+  <script src="js/contact-calendar.js" defer></script>
 </head>
 <body>
   <main class="contact-page">
     <h1>Contact Us</h1>
     <p>Email us at <a href="mailto:waikoloafamilyretreat@gmail.com">waikoloafamilyretreat@gmail.com</a></p>
+    <section class="stay-calendar" aria-labelledby="stay-heading">
+      <h2 id="stay-heading">Availability calendar</h2>
+      <div class="calendar-toolbar">
+        <button type="button" id="previous-month" aria-label="Previous month">&#8592;</button>
+        <h3 id="calendar-month" aria-live="polite"></h3>
+        <button type="button" id="next-month" aria-label="Next month">&#8594;</button>
+      </div>
+      <div class="calendar-legend" aria-label="Calendar legend">
+        <span><i class="available"></i>Available</span>
+        <span><i class="booked"></i>Booked</span>
+        <span><i class="unconfirmed"></i>Not confirmed</span>
+      </div>
+      <table class="availability-grid" aria-labelledby="calendar-month">
+        <thead><tr>
+          <th scope="col">Sun</th><th scope="col">Mon</th><th scope="col">Tue</th>
+          <th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th><th scope="col">Sat</th>
+        </tr></thead>
+        <tbody id="calendar-days"></tbody>
+      </table>
+      <p class="stay-note" id="calendar-note">Availability has not been confirmed yet. Please email us for dates.</p>
+      <noscript><p>Enable JavaScript to view the calendar, or email us for availability.</p></noscript>
+    </section>
   </main>
 </body>
 </html>

@@ -151,6 +151,68 @@ body {
   margin: 0 auto 60px;
 }
 
+.stay-calendar {
+  max-width: 620px;
+  margin: 32px auto 0;
+  padding: clamp(20px, 4vw, 32px);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.stay-calendar h2 {
+  margin-top: 0;
+}
+
+.calendar-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.calendar-toolbar h3 { margin: 0; }
+
+.calendar-toolbar button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.calendar-toolbar button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.calendar-toolbar button:disabled { opacity: 0.4; cursor: default; }
+
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+  margin: 20px 0;
+  font-size: 0.85rem;
+}
+
+.calendar-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.calendar-legend i { width: 14px; height: 14px; border-radius: 3px; }
+.stay-calendar .available { background: #dceee0; color: #245c33; }
+.stay-calendar .booked { background: #f6dedd; color: #8a2929; }
+.stay-calendar .unconfirmed { background: #eeeae4; color: #55504a; }
+.availability-grid { width: 100%; table-layout: fixed; border-spacing: 4px; }
+.availability-grid th { font-size: 0.75rem; padding-bottom: 8px; }
+.availability-grid td { height: 48px; border-radius: 6px; }
+.availability-grid .booked { text-decoration: line-through; }
+.availability-grid .past { color: var(--muted); }
+.availability-grid .today { outline: 2px solid var(--text); outline-offset: -2px; }
+.stay-note { color: var(--muted); font-size: 0.9rem; margin-bottom: 0; }
+
 .testimonials-page {
   width: min(800px, calc(100% - 40px));
   margin: 0 auto 60px;
